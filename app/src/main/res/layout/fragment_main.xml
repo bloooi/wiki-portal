@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <lee.jaebeom.allwiki.util.NestedWebView
+        android:id="@+id/fragment_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <WebView
+        android:id="@+id/fragment_DOM_Access"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+    <ProgressBar
+        android:id="@+id/fragment_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:max="100"
+        android:visibility="invisible" />
+</FrameLayout>

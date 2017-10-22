@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/7795bbf3bc2af1bbac9d596cb22d486d5e1ed01e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_a75cb218041af38d64cd277b39ba4ad8212ed2f1.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_df55dc42a6ba7179e9f7e50e39d915e0fd717165/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/support-annotations-26.1.0_2e7b7ec97a31fdc8be193de0142cb254f579d04a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/388394a05fb9e047f58d8c39010792ce46491df0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_aec611ea0bb8d125546553664da69562756a3489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/0686f63346761c411f7d8a7f71ded6c507f5dd4f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b12cd9c87c3dfb012a911b6e38d2444ed0a65e1f">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_e2016392a75685c11f66205dacb99a2561cce2d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/4c8c75c34a2a9f9f2f84c978cfa80188b71b7236/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="58b12bdb21a84f22e0dc3b047aeceb0a546b1b44">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_9911b65eea3ca3fed384d3a169200b9445e4d59d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/1c621b2a48d512ccbdbc2e0fa0f8ac608dc0304b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_a54d6457a6930ffb8770ce90991911d560450d6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/00319841a3d59b6292e693cafb22551eefac1359/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="40392f30a601db5675cdf18192aab013d6fee6ec">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_1db6dc7f0869e7c918e977e88f08a0c01f7a4463.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/92fe050813617f1db2e91b1cc430ea66ffd29081/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_b6e607f0f427b16969f7c1809cb9898b511da895.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/b497a0fae00c0d1ebda2bc0a09d41b9bdd299939/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f428e2fbc9ed0b297e3a3f420e51e6982f66822d">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_8367fe7261dd28204897f679732e64e3acd32897.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/common-1.0.0_1db444a3718beb96b4ebc738903b6db45a3cd93a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/3b64363955f93a3bb333992e97685a7c032f3b93/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_d1c4a1c13d9a537fd0596f4f556a9f2330f77df4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/MaterialSearch/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="46dd057b875fe4fcc2ab4b2139008baea6370e2e">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_7dc62dd0b03aba9a42e8bd9790f90c87df718551.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1eac1eca7a0041d2e587d36d8f6e4ee5bf2db0d0">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_facdb35d55d34ac45d1336de86215d92de86d248/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/ad5a4394633fbfa29247b26763c5f89d638710f2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_c46def1613ac5b70e532d1de9acbdd4123dfb45e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/4620206c90772e63ffff3037b121d17d74de7c0f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_006e7c42ba54c4de4d1455d1a237ed30b56d495f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/common-1.0.0_181470ae49724fce0006a60a4257fee007a52871.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/764caf4b12f964c32e930dabd91443c7fec28ac6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6f4138a4e065826cb044d49faea4cfd7191773d1">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_3c5fe75f6f3769e6dda330366cc1bf32780ec4c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/c32ca54cedd9e7fabb4b6686c38537a046419b71/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a37fc31c5ceeaa4532a37358add1b189d8db4af1">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_39b7cc3c10135068b5b9cbdcbb5cfc0348db2087.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/leejaebeom/.android/build-cache/28a6fcdcbeda476ca35d4f352c507342b73a9501/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4fcdb502616fa4dae61969d0bc931fbb7a6e213">
+        <dex dex="/Users/leejaebeom/Dropbox/Developer/Android Project/AllWiki/app/build/intermediates/pre-dexed/debug/classes_6b70f6ee36af8db2e21c5222343950b7c658453b.jar" />
+    </item>
+
+</items>

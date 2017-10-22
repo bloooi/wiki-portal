@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "275059135626",
+    "firebase_url": "https://wiki-potal.firebaseio.com",
+    "project_id": "wiki-potal",
+    "storage_bucket": "wiki-potal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275059135626:android:05facb23b490f305",
+        "android_client_info": {
+          "package_name": "lee.jaebeom.allwiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275059135626-8h5m6om4vviadjbmqv66amovi6ftj8l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwWtbr5t7b_7FZU19zguwq57o3IoNBrVo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
