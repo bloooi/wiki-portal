@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:275059135626:android:05facb23b490f305",
+        "mobilesdk_app_id": "1:275059135626:android:d1842936a588cb79",
         "android_client_info": {
-          "package_name": "lee.jaebeom.allwiki"
+          "package_name": "lee.jaebeom.WikiPortal"
         }
       },
       "oauth_client": [

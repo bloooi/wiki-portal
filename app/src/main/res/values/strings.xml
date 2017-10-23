@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AllWiki</string>
+    <string name="app_name">위키포탈</string>
     <string name="title_activity_temp">temp</string>
 
     <string name="title_activity_default_settings">사용할 위키를 선택해주세요</string>
@@ -9,12 +9,35 @@
     <string name="setting_title">사용할 위키를 선택해주세요</string>
     <string name="re_setting_title">현재 사용중인 위키</string>
 
+    <string name="pref_wikipedia_language_setting_title">Wikipedia 언어 설정</string>
     <!--wiki category-->
     <string name="encyclopedia">백과</string>
+    <string name="pref_etc">기타</string>
 
     <!--Dialog Message-->
     <string name="message_none_wikis">하나 이상의 위키를 선택해야 돼요 \n(나중에 변경할수 있어요!)</string>
 
     <!--Dialog Title-->
     <string name="title_none_wikis">선택한 위키가 없음.</string>
+
+    <!--Wikipedia language-->
+    <string-array name="language_key_arrays">
+        <item>한국어</item>
+        <item>English</item>
+        <item>日本語</item>
+        <item>中文</item>
+        <item>Español</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+    </string-array>
+
+    <string-array name="language_value_arrays">
+        <item>ko</item>
+        <item>en</item>
+        <item>ja</item>
+        <item>zh</item>
+        <item>es</item>
+        <item>de</item>
+        <item>fr</item>
+    </string-array>
 </resources>

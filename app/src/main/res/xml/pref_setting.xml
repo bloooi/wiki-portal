@@ -2,21 +2,23 @@
     android:title="@string/setting_title"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
-         dismiss it. -->
-    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
-    <!--<ListPreference-->
-        <!--android:defaultValue="180"-->
-        <!--android:entries="@array/pref_sync_frequency_titles"-->
-        <!--android:entryValues="@array/pref_sync_frequency_values"-->
-        <!--android:key="sync_frequency"-->
-        <!--android:negativeButtonText="@null"-->
-        <!--android:positiveButtonText="@null"-->
-        <!--android:title="@string/pref_title_sync_frequency" />-->
     <PreferenceCategory
         android:title="@string/encyclopedia"
         android:key="setting_title"
         >
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/pref_etc"
+        android:key="setting_title"
+        >
+        <ListPreference
+            android:title="@string/pref_wikipedia_language_setting_title"
+            android:entries="@array/language_key_arrays"
+            android:entryValues="@array/language_value_arrays"
+            android:key="wikipedia_language_setting"
+            android:defaultValue="ko"
+            android:summary="한국어"
+            />
+    </PreferenceCategory>
 </PreferenceScreen>

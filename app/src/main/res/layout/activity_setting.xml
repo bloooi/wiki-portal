@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="lee.jaebeom.allwiki.setting.SettingActivity">
+    tools:context="lee.jaebeom.WikiPortal.setting.SettingActivity">
     <include layout="@layout/tool_bar"/>
     <fragment
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        class = "lee.jaebeom.allwiki.setting.SettingFragment"
+        class = "lee.jaebeom.WikiPortal.setting.SettingFragment"
         />
 </android.support.design.widget.CoordinatorLayout>

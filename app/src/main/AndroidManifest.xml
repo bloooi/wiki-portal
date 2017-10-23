@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="lee.jaebeom.allwiki">
+    package="lee.jaebeom.WikiPortal">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,21 +13,21 @@
         android:theme="@style/AppTheme"
         android:hardwareAccelerated="true"
         >
-        <activity android:name=".main.MainActivity">
+        <activity android:name="lee.jaebeom.WikiPortal.main.MainActivity">
 
         </activity>
         <activity
-            android:name=".temp"
+            android:name="lee.jaebeom.WikiPortal.temp"
             android:label="@string/title_activity_temp"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".setting.SettingActivity"
+            android:name="lee.jaebeom.WikiPortal.setting.SettingActivity"
             android:theme="@style/AppThemePreference"
             >
 
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="lee.jaebeom.WikiPortal.SplashActivity"
             android:theme="@style/AppTheme.SplashTheme"
             >
             <intent-filter>
