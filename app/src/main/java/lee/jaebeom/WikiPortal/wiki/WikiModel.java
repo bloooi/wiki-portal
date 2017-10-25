@@ -14,11 +14,12 @@ public class WikiModel {
     private int order; //순서
     private String frontURL;
 
-    public WikiModel(String name, int category, String URL, String frontURL) {
+    public WikiModel(String name, int category, String URL, String frontURL, int order) {
         this.name = name;
         this.category = category;
         this.URL = URL;
         this.frontURL = frontURL;
+        this.order = order;
     }
 
     public String getName() {
@@ -58,5 +59,9 @@ public class WikiModel {
 
     public void setUse(boolean use) {
         isUse = use;
+    }
+
+    public int getOrder() {
+        return order;
     }
 }

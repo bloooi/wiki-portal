@@ -56,7 +56,7 @@ public class MainContentFragment extends Fragment implements MainContract.TabVie
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (savedInstanceState == null){
+        if (presenter != null){
             if (!SharedPreference.getStringPreferences(getContext(),SharedPreference.keyKeyword).equals("")){
                 URL = presenter.getWikiURL(getArguments().getString("wiki")) + SharedPreference.getStringPreferences(getContext(),SharedPreference.keyKeyword);
             }else{

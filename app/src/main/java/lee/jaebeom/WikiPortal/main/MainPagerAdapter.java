@@ -4,8 +4,12 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.view.View;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Map;
 
 import lee.jaebeom.WikiPortal.util.SharedPreference;
@@ -16,13 +20,13 @@ import lee.jaebeom.WikiPortal.wiki.WikiModel;
  * Created by leejaebeom on 2017. 10. 14..
  */
 
-public class MainPagerAdapter extends FragmentPagerAdapter implements MainContract.View {
-    String keyword;
+public class MainPagerAdapter extends FragmentStatePagerAdapter implements MainContract.View {
     int wikis = 0;
+    String keyword;
     Context context;
     private MainContentFragment []fragment;
     private MainTabPresenter [] presenters;
-    private ArrayList <WikiModel>useWikis = new ArrayList();
+    private ArrayList <WikiModel>useWikis;
     private MainContract.Presenter presenter;
 
     public MainPagerAdapter(FragmentManager fm, Context context) {
@@ -30,15 +34,9 @@ public class MainPagerAdapter extends FragmentPagerAdapter implements MainContra
         this.context = context;
         keyword = SharedPreference.getStringPreferences(context, SharedPreference.keyKeyword);
 
-        for (Map.Entry<String, WikiModel> entry: WikiData.wikiURL.entrySet()){
-            if (entry.getValue().isUse()){
-                useWikis.add(entry.getValue());
-                wikis++;
-            }
-        }
-        presenters = new MainTabPresenter[wikis];
-        fragment = new MainContentFragment[wikis];
+        init();
     }
+
     @Override
     public CharSequence getPageTitle(int position) {
         return useWikis.get(position).getName();
@@ -53,7 +51,11 @@ public class MainPagerAdapter extends FragmentPagerAdapter implements MainContra
 
     @Override
     public int getItemPosition(Object object) {
-        return POSITION_NONE;
+        if (useWikis.contains(object)) {
+            return useWikis.indexOf(object);
+        } else {
+            return POSITION_NONE;
+        }
     }
 
     @Override
@@ -61,14 +63,43 @@ public class MainPagerAdapter extends FragmentPagerAdapter implements MainContra
         return wikis;
     }
 
+    private void init(){
+        wikis = 0;
+        useWikis = new ArrayList<>();
+        for (Map.Entry<String, WikiModel> entry: WikiData.wikiURL.entrySet()){
+            if (entry.getValue().isUse()){
+                useWikis.add(entry.getValue());
+                wikis++;
+            }
+        }
+        AscendingObj ascending = new AscendingObj();
+        Collections.sort(useWikis, ascending);
+
+        presenters = new MainTabPresenter[wikis];
+        fragment = new MainContentFragment[wikis];
+    }
+    @Override
+    public void dataChange() {
+        keyword = SharedPreference.getStringPreferences(context, SharedPreference.keyKeyword);
+        notifyDataSetChanged();
+    }
+
+    @Override
+    public void settingChange() {
+        init();
+        notifyDataSetChanged();
+    }
+
     @Override
     public void setPresenter(MainContract.Presenter presenter) {
         this.presenter = presenter;
     }
 
-    @Override
-    public void dataChange() {
-        keyword = SharedPreference.getStringPreferences(context, SharedPreference.keyKeyword);
-        notifyDataSetChanged();
+    class AscendingObj implements Comparator<WikiModel> {
+
+        @Override
+        public int compare(WikiModel wikiModel, WikiModel t1) {
+            return Integer.valueOf(wikiModel.getOrder()).compareTo(t1.getOrder());
+        }
     }
 }

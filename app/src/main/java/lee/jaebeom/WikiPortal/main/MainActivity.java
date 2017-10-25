@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
-        searchView = (MaterialSearchView)findViewById(R.id.search_view);
-        mainTabLayout = (TabLayout)findViewById(R.id.tab_layout);
-        mainViewPager = (ViewPager)findViewById(R.id.view_pager);
+        toolbar = findViewById(R.id.toolbar);
+        searchView = findViewById(R.id.search_view);
+        mainTabLayout = findViewById(R.id.tab_layout);
+        mainViewPager = findViewById(R.id.view_pager);
         adapter = new MainPagerAdapter(getSupportFragmentManager(), this);
         presenter = new MainPresenter(adapter);
 
@@ -56,14 +56,16 @@ public class MainActivity extends AppCompatActivity{
 
         mainViewPager.setAdapter(adapter);
         mainViewPager.setOffscreenPageLimit(2);
-        mainTabLayout.setupWithViewPager(mainViewPager);
+
+        mainTabLayout.setupWithViewPager(mainViewPager, true);
 
         searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 presenter.search(query, MainActivity.this);
                 toolbar.setTitle(query);
-                return false;
+                onBackPressed();
+                return true;
             }
 
             @Override
@@ -85,7 +87,9 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_setting){
-            startActivityForResult(new Intent(this, SettingActivity.class), SETTING_REQUEST_CODE);
+            Intent intent = new Intent(this, SettingActivity.class);
+            intent.putExtra("isMain", true);
+            startActivityForResult(intent, SETTING_REQUEST_CODE);
         }
         return true;
     }
@@ -95,6 +99,8 @@ public class MainActivity extends AppCompatActivity{
         if (resultCode == RESULT_OK){
             if (requestCode == SETTING_REQUEST_CODE){
                 presenter.setSetting();
+//                adapter = new MainPagerAdapter(getSupportFragmentManager(), this);
+//                mainViewPager.setAdapter(adapter);
             }
         }
         super.onActivityResult(requestCode, resultCode, data);

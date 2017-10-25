@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">위키포탈</string>
+    <string name="app_name">위키포털</string>
     <string name="title_activity_temp">temp</string>
 
     <string name="title_activity_default_settings">사용할 위키를 선택해주세요</string>

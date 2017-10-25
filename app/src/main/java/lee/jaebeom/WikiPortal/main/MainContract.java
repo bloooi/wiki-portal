@@ -13,6 +13,7 @@ import lee.jaebeom.WikiPortal.BaseView;
 public interface MainContract {
     interface View extends BaseView<Presenter>{
         void dataChange();
+        void settingChange();
     }
     interface TabView extends BaseView<TabPresenter> {
         void CallBack();

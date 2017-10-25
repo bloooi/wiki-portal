@@ -24,9 +24,9 @@ public class WikiData {
 
     static{
         wikiURL = new HashMap<>();
-        wikiURL.put(Wikipedia, new WikiModel(Wikipedia, encyclopedia, "https://ko.m.wikipedia.org/wiki/", "https://ko.m.wikipedia.org/wiki/"));
-        wikiURL.put(Namuwiki, new WikiModel(Namuwiki, encyclopedia, "https://namu.wiki/go/", "https://namu.wiki/w/나무위키:대문"));
-        wikiURL.put(Librewiki, new WikiModel(Librewiki, encyclopedia, "https://librewiki.net/wiki/", "https://librewiki.net/"));
+        wikiURL.put(Wikipedia, new WikiModel(Wikipedia, encyclopedia, "https://ko.m.wikipedia.org/wiki/", "https://ko.m.wikipedia.org/wiki/", 1));
+        wikiURL.put(Namuwiki, new WikiModel(Namuwiki, encyclopedia, "https://namu.wiki/go/", "https://namu.wiki/w/나무위키:대문", 2));
+        wikiURL.put(Librewiki, new WikiModel(Librewiki, encyclopedia, "https://librewiki.net/wiki/", "https://librewiki.net/", 3));
 //        wikiURL.put(Rigvedawiki, new WikiModel(Rigvedawiki, encyclopedia, "http://Rigvedawiki.net/w/", "http://rigvedawiki.net"));
 
     }

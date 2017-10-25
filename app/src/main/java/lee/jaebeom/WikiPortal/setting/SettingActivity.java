@@ -20,8 +20,11 @@ public class SettingActivity extends AppCompatActivity{
 
     SettingPresent presenter;
     Toolbar toolbar;
+    boolean isMain = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Intent intent = getIntent();
+        isMain = intent.getBooleanExtra("isMain", false);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
@@ -64,5 +67,13 @@ public class SettingActivity extends AppCompatActivity{
     public void onBackPressed() {
         setResult(RESULT_OK);
         finish();
+    }
+
+    @Override
+    public void finish() {
+        if (!isMain){
+            startActivity(new Intent(this, MainActivity.class));
+        }
+        super.finish();
     }
 }

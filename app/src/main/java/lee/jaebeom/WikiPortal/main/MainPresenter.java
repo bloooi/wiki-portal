@@ -28,7 +28,7 @@ public class MainPresenter implements MainContract.Presenter {
 
     @Override
     public void setSetting() {
-        mainView.dataChange();
+        mainView.settingChange();
     }
 
 
