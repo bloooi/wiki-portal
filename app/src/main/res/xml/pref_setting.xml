@@ -20,5 +20,12 @@
             android:defaultValue="ko"
             android:summary="한국어"
             />
+        <Preference
+            android:title="@string/pref_wiki_sequence_title"
+            android:key="wiki_sequence"
+            >
+            <intent android:action="android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS"
+                />
+        </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

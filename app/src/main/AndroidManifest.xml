@@ -17,10 +17,6 @@
 
         </activity>
         <activity
-            android:name="lee.jaebeom.WikiPortal.temp"
-            android:label="@string/title_activity_temp"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name="lee.jaebeom.WikiPortal.setting.SettingActivity"
             android:theme="@style/AppThemePreference"
             >
@@ -34,6 +30,12 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".setting.sequence.SequenceActivity">
+            <intent-filter>
+                <action android:name="android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

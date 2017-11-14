@@ -453,6 +453,9 @@ public class MaterialSearchView extends FrameLayout implements Filter.FilterList
         }
     }
 
+    public void setText(CharSequence query){
+        mSearchSrcTextView.setText(query);
+    }
     /**
      * if show is true, this will enable voice search. If voice is not available on the device, this method call has not effect.
      *

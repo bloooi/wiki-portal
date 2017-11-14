@@ -8,17 +8,19 @@
     <string name="setting">설정</string>
     <string name="setting_title">사용할 위키를 선택해주세요</string>
     <string name="re_setting_title">현재 사용중인 위키</string>
-
     <string name="pref_wikipedia_language_setting_title">Wikipedia 언어 설정</string>
+    <string name="pref_wiki_sequence_title">위키 순서 설정</string>
     <!--wiki category-->
     <string name="encyclopedia">백과</string>
     <string name="pref_etc">기타</string>
 
     <!--Dialog Message-->
     <string name="message_none_wikis">하나 이상의 위키를 선택해야 돼요 \n(나중에 변경할수 있어요!)</string>
+    <string name="message_unconnected_network">와이파이나 데이터가 연결 되어 있는지 확인해 주세요!</string>
 
     <!--Dialog Title-->
     <string name="title_none_wikis">선택한 위키가 없음.</string>
+    <string name="title_unconnected_network">인터넷에 연결되어 있지 않음</string>
 
     <!--Wikipedia language-->
     <string-array name="language_key_arrays">
