@@ -20,6 +20,7 @@ class SplashActivity : AppCompatActivity() {
         var wikis = 0
         var sharedPref : SharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
 
+        WikiData.clearUseWikis()
         for (entry : Map.Entry<String, WikiModel> in WikiData.wikiURL.entries){
             entry.value.isUse = sharedPref.getBoolean(entry.key, false) //사용 하는 위키
             var lang : String  = sharedPref.getString(entry.key+ "_language_setting", WikiData.korean)  //언어 설정

@@ -25,6 +25,9 @@ class WikiData {
 //          wikiURL.put(Rigvedawiki, WikiModel(Rigvedawiki, encyclopedia, "http://Rigvedawiki.net/w/", "http://rigvedawiki.net"));
         }
 
+        fun clearUseWikis(){
+            useWikis.clear()
+        }
         fun sortSequence(){
             Collections.sort(useWikis, AscendingObj())
         }

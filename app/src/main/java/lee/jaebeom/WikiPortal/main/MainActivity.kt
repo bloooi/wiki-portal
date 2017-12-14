@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        if (!NetworkCheck.isWifiConnect(this)){
-            Dialog.notice(this, R.string.title_unconnected_network, R.string.message_unconnected_network, DialogInterface.OnClickListener { p0, p1 -> finish() })
-        }
+//        if (!NetworkCheck.isWifiConnect(this)){
+//            Dialog.notice(this, R.string.title_unconnected_network, R.string.message_unconnected_network, DialogInterface.OnClickListener { p0, p1 -> finish() })
+//        }
         //toolbar 생략
         //MaterialSearchView 생략
         //ViewPager 생략
